@@ -36,6 +36,12 @@ module.exports = {
     slugify,
     asAccordion: function (data) {
 
+        console.log("*********");
+        console.log("asAccordion");
+
+        console.log(data[0].keyword);
+        console.log(data[1].keyword);
+        
         let topics = data.reduce((result, current, index) => {
 
             let keyword = slugify(current.keyword);
@@ -47,13 +53,17 @@ module.exports = {
             return result;
         }, {});
 
+        //console.log("******************************");
+        //console.log(topics);
+        //console.log("******************************");
+
         let cards = Object.keys(topics).map((topicName, index) => {
             //console.log(topicName);
             let topic = topics[topicName];
             //console.log(topic);
 
             let courses = topic.map(course=>{
-                return `<div><a href="/saved_searches/${course.location}/${slugify(course.keyword)}/${slugify(course.title)}.html">${course.title}</a></div>`;
+                return `<div><a href="/saved_searches/${slugify(course.location)}/${slugify(course.keyword)}/${slugify(course.title)}.html">${course.title}</a></div>`;
             });
             let card = `<div class="card">
                             <div class="card-header" id="headingOne">
@@ -71,14 +81,19 @@ module.exports = {
                             </div>
                         </div>`;
             return card;
+
+            
         });
-        let accordion = `<div class="accordion" id="savedSearchAccordion">
-                    ${cards.join("")}
-                </div>`;
+        let accordion = `<div class="accordion" id="savedSearchAccordion">    
+                ${cards.join("")}
+        </div>`;
+
+        
     
         html = `<section id="savedsearches" class="section">
                     <div class="container">
                         <div class="col">
+                        
                         ${accordion}
                         </div>
                     </div>
@@ -188,6 +203,17 @@ module.exports = {
                 break; bv
             case "keywordtext":
 
+<<<<<<< HEAD
+=======
+                try {
+                    list = `<ul>${section.content.list.map(item=>`<li>${item}</li>`).join("")}</ul>`;
+
+                } catch(error) {
+                    list = `<ul></ul>`;
+                    console.log(`***** metadata error section.content.list is missing - keywordtext *****`);  
+
+                }
+>>>>>>> ade9f271b57d44ce03ace8b4c341d866c109f6d2
 
                 //let defaultTemplate = `<div>${site.searchKeywords.join(" ")}</div>`;
                 let defaultTemplate = `${site.searchKeywords[0]} is one of the most popular coding languages in the world. The job market for ${ site.searchKeywords[0] } developers is robust and consistent, making it a great programming language to learn. Our courses can give you the skills you need to work effectively with ${ site.searchKeywords[0] }.  Why attend one of our ${ site.searchKeywords[0] } courses? If you're interested working effectively with ${ site.searchKeywords[0] } to benefit your organisation and to get an edge over your competitors, or simply to learn a highly lucrative skill then you should consider our ${ site.searchKeywords[0] } training course.</p>`
@@ -226,10 +252,13 @@ module.exports = {
                 break;
 
             case "animatedtwocolumns":
-                //let list = "<ul>";
-                //section.content.list.map(item=>list += `<li>${item}</li>`);
-                //list += "</ul>";
-                list = `<ul>${section.content.list.map(item=>`<li>${item}</li>`).join("")}</ul>`;
+                try {
+                    list = `<ul>${section.content.list.map(item=>`<li>${item}</li>`).join("")}</ul>`;
+                } catch(error) {
+                    list = `<ul></ul>`;
+                    console.log(`***** metadata error section.content.list is missing - animatedtwocolumns *****`);
+                    
+                }
 
                 html = `<section id="${section.id}" class="section">
                     <div class="container">
@@ -284,13 +313,15 @@ module.exports = {
 
 
                 break;
-    
+                
 
             case "listwithimage":
-                //let list = "<ul>";
-                //section.content.list.map(item=>list += `<li>${item}</li>`);
-                //list += "</ul>";
+                try {
                 list = `<ul>${section.content.list.map(item=>`<li>${item}</li>`).join("")}</ul>`;
+                } catch(error) {
+                    list = `<ul></ul>`;
+                    console.log(`***** metadata error section.content.list is missing - listwithimage *****`);
+                }
 
                 html = `<section id="${section.id}" class="section">
                     <div class="container">
@@ -326,6 +357,16 @@ module.exports = {
 
                 case "summary":
 
+<<<<<<< HEAD
+=======
+                    try {
+                        list = `<ul>${section.content.list.map(item=>`<li>${item}</li>`).join("")}</ul>`;
+                    } catch(error) {
+                        list = `<ul></ul>`;
+                        console.log(`***** metadata error section.content.list is missing - summary *****`);
+                    }
+                    
+>>>>>>> ade9f271b57d44ce03ace8b4c341d866c109f6d2
                     html = `<section id="${section.id}" class="section">
                         <div class="container">
                         <h3 class="title text-center">${ section.title }</h3>
@@ -394,7 +435,11 @@ module.exports = {
         }
         return html;
     }
+<<<<<<< HEAD
 }
 
 
 
+=======
+}
+>>>>>>> ade9f271b57d44ce03ace8b4c341d866c109f6d2
