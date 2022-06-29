@@ -203,8 +203,6 @@ module.exports = {
                 break; bv
             case "keywordtext":
 
-<<<<<<< HEAD
-=======
                 try {
                     list = `<ul>${section.content.list.map(item=>`<li>${item}</li>`).join("")}</ul>`;
 
@@ -213,7 +211,6 @@ module.exports = {
                     console.log(`***** metadata error section.content.list is missing - keywordtext *****`);  
 
                 }
->>>>>>> ade9f271b57d44ce03ace8b4c341d866c109f6d2
 
                 //let defaultTemplate = `<div>${site.searchKeywords.join(" ")}</div>`;
                 let defaultTemplate = `${site.searchKeywords[0]} is one of the most popular coding languages in the world. The job market for ${ site.searchKeywords[0] } developers is robust and consistent, making it a great programming language to learn. Our courses can give you the skills you need to work effectively with ${ site.searchKeywords[0] }.  Why attend one of our ${ site.searchKeywords[0] } courses? If you're interested working effectively with ${ site.searchKeywords[0] } to benefit your organisation and to get an edge over your competitors, or simply to learn a highly lucrative skill then you should consider our ${ site.searchKeywords[0] } training course.</p>`
@@ -357,8 +354,6 @@ module.exports = {
 
                 case "summary":
 
-<<<<<<< HEAD
-=======
                     try {
                         list = `<ul>${section.content.list.map(item=>`<li>${item}</li>`).join("")}</ul>`;
                     } catch(error) {
@@ -366,7 +361,6 @@ module.exports = {
                         console.log(`***** metadata error section.content.list is missing - summary *****`);
                     }
                     
->>>>>>> ade9f271b57d44ce03ace8b4c341d866c109f6d2
                     html = `<section id="${section.id}" class="section">
                         <div class="container">
                         <h3 class="title text-center">${ section.title }</h3>
@@ -435,11 +429,4 @@ module.exports = {
         }
         return html;
     }
-<<<<<<< HEAD
 }
-
-
-
-=======
-}
->>>>>>> ade9f271b57d44ce03ace8b4c341d866c109f6d2
