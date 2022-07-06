@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
     "searchKeywords": ["Facilitation Skills"],
-=======
-    "searchKeywords": ["Java", "Spring"],
->>>>>>> 1f69853ca57358b7ff7dc5d352d5c7793db28e28
     "searchLocations": ["Dublin", "Cork", "Limerick", "Ireland"],
     "homepageTitle": "Training Courses - Dublin Cork Limerick Ireland", 
     "organisation": {
