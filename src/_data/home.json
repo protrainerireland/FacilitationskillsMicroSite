@@ -25,8 +25,11 @@
             "imagePosition": "right",
             "content":{
                 "title": "To ensure that the group's objectives are met effectively...",
-                "text1": "The definition of facilitate is \"to make easy\" or \"ease a process.\" What a facilitator does is plan, guide and manage a group event to ensure that the group's objectives are met effectively, with clear thinking, good participation and full buy-in from everyone who is involved.",
-                "text2": "To facilitate effectively, you must be objective. This doesn't mean you have to come from outside the organization or team, though. It simply means that, for the purposes of this group process, you will take a neutral stance. You step back from the detailed content and from your own personal views, and focus purely on the group process."
+                "text":[
+                    "The definition of facilitate is \"to make easy\" or \"ease a process.\" What a facilitator does is plan, guide and manage a group event to ensure that the group's objectives are met effectively, with clear thinking, good participation and full buy-in from everyone who is involved.",
+                    "To facilitate effectively, you must be objective. This doesn't mean you have to come from outside the organization or team, though. It simply means that, for the purposes of this group process, you will take a neutral stance. You step back from the detailed content and from your own personal views, and focus purely on the group process."
+                ] 
+                
             }
         },
         {
@@ -34,13 +37,16 @@
             "link": "/#summary", 
             "text": "Why Attend?", 
             "title": "Why Attend?", 
-            "type": "summary",
+            "type": "keywordtext",
             "image": "", 
             "imagePosition": "right",
             "content":{
+
                 "title": "Why attend one of our Facilitation Skills courses?",
-                "text1": "Our Facilitation Skills training assists participants to be proactive, intentional and goal-oriented in group settings. We encourage them to help their teams to focus on the right problems, implement beneficial changes, and positively impact their organisation. The focus allows for a process awareness and interpersonal understanding.",
-                "text2": "<a href=/courses>Our training sessions</a> are very practical with a focus on experiential, action-based learning to demonstrate and deliver the key principles required. "
+                "text":[
+                    "Our Facilitation Skills training assists participants to be proactive, intentional and goal-oriented in group settings. We encourage them to help their teams to focus on the right problems, implement beneficial changes, and positively impact their organisation. The focus allows for a process awareness and interpersonal understanding.",
+                    "<a href=/courses>Our training sessions</a> are very practical with a focus on experiential, action-based learning to demonstrate and deliver the key principles required. "
+                ]
             }
         }
          
