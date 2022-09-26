@@ -3,7 +3,8 @@
     "searchLocations": ["Dublin", "Cork", "Limerick", "Ireland"],
     "homepageTitle": "Training Courses - Dublin Cork Limerick Ireland", 
     "organisation": {
-        "name": "FacilitationSkillsTraining.ie" 
+        "name": "Professional Training Solutions Ltd" ,
+        "department": "FacilitationSkillsTraining.ie" 
     },
     "url": "facilitationskillstraining.ie",
     "logo": "",
