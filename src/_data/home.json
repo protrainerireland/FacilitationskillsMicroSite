@@ -35,9 +35,15 @@
         {
             "id": "summary",
             "link": "/#summary", 
+<<<<<<< HEAD
             "text": "Why Attend?", 
             "title": "Why Attend?", 
             "type": "keywordtext",
+=======
+            "text": "What to Expect", 
+            "title": "What to Expect", 
+            "type": "summary",
+>>>>>>> 62af7a145178e1d298b76bd45141aa40f13034c6
             "image": "", 
             "imagePosition": "right",
             "imageWidth": 300, 
